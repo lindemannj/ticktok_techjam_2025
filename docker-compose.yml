@@ -1,0 +1,18 @@
+services:
+  backend:
+    build: ./api-gateway
+    container_name: tiktok-tech-jam-api-gateway
+    ports:
+      - "8001:8000"
+    volumes:
+      - ./api-gateway:/app
+    environment:
+      - ENV=development
+
+  frontend:
+    build: ./frontend
+    container_name: tiktok-tech-jam-frontend
+    ports:
+      - "8501:8501"
+    depends_on:
+      - backend
