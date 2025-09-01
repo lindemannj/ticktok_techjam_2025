@@ -1,2 +1,7 @@
 fastapi
 uvicorn[standard]
+Pillow
+opencv-python
+python-multipart
+pytesseract
+numpy==1.26.4
