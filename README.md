@@ -7,7 +7,7 @@
 
 This project was developed as part of the TikTokJam 2025 Hackathon. The challenge was to design a solution for automatically detecting and obscuring personal information in images. I participated solo and created a demo application that demonstrates a privacy-preserving workflow for images.
 
-The application allows users to upload images, automatically detects faces and text, and then blurs or pixelates these sensitive elements to protect privacy. This solution showcases a practical approach to handling personal data in shared media while maintaining usability.
+The application allows users to upload images, automatically detects faces and text, and then pixelates these sensitive elements to protect privacy. This solution showcases a practical approach to handling personal data in shared media while maintaining usability.
 
 ## Features
 
