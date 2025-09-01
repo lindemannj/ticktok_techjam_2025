@@ -10,7 +10,7 @@ if 'uploaded_file' not in st.session_state:
     st.session_state.uploaded_file = None
 
 st.title("Image Anonymization App")
-st.subheader("Upload an image to detect and optionally blur faces.")
+st.subheader("Upload an image to detect and optionally pixelate texts and faces.")
 
 uploaded_file = st.file_uploader("Choose an image file", type=["jpg", "jpeg", "png"])
 
@@ -41,4 +41,4 @@ if uploaded_file:
                 mime="image/jpeg"
             )
         except requests.exceptions.RequestException as e:
-            st.error(f"Error during blurring API call: {e}")
+            st.error(f"Error during API call: {e}")
